@@ -8,6 +8,3 @@ This chapter will help you to get answers on typical interview questions for **a
 Questions list
 ---------
 
-#### Create `sqrt` function
-
-#### Find substring positon
