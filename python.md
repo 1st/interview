@@ -11,7 +11,7 @@ Questions list
 
 #### What is `GIL`
 
-> `GIL` *(Global Interpreter Lock)* is a mutex that prevents multiple native threads from executing Python bytecodes at once. This lock is necessary mainly because CPython's memory management is not thread-safe.
+`GIL` *(Global Interpreter Lock)* is a mutex that prevents multiple native threads from executing Python bytecodes at once. This lock is necessary mainly because CPython's memory management is not thread-safe.
 
 Links:
 - [Global Interpreter Lock](https://wiki.python.org/moin/GlobalInterpreterLock)
@@ -24,7 +24,7 @@ Links:
 
 #### What is `set`?
 
-> `sets` is unordered collections of unique elements.
+`sets` is unordered collections of unique elements.
 
 Links:
 - [sets](https://docs.python.org/2/library/sets.html) basic info *(deprecated in python 2.6)*
