@@ -1,4 +1,4 @@
-Interview Questions for **Python developer**
+Interview Questions for Python developer
 =========
 
 
