@@ -20,6 +20,9 @@ Links:
 
 #### What is `mutable` and `immutable` types?
 
+`Immutable` *(can't be changed in place, only replaced to new value)*: numbers, strings and tuples.
+`Mutable`: dictionaries and lists.
+
 #### What difference between `tuple` and `list`
 
 #### What is `set`?
