@@ -18,7 +18,7 @@ Links:
 
 #### What types of data is used in python?
 
-#### What is `muttable` and `immutable` types?
+#### What is `mutable` and `immutable` types?
 
 #### What difference between `tuple` and `list`
 
