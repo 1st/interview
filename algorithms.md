@@ -30,7 +30,7 @@ def find_substr(string, substr):
 # pythonic implementation with string slice
 def find_substr(string, substr):
     for i in range(0, len(string)):
-        if substr == string[i:i+len(substr)]:
+        if substr == string[i:i + len(substr)]:
             return True
     return False
 ```
