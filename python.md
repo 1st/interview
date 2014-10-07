@@ -25,9 +25,40 @@ Questions list
 
 #### What difference between `tuple` and `list`
 
+**Tuple** is immutable data type, and **list** is mutable *(see notes below)*.
+
+Example of tuple: `t = (1, 'a', True)` and list: `l = [1, 'a', True]`
+
 #### What is `set`?
 
 `sets` is unordered collections of unique elements.
 
 - [sets](https://docs.python.org/2/library/sets.html) basic info *(deprecated in python 2.6)*
 - [set](https://docs.python.org/2.7/library/stdtypes.html#set) type
+
+#### What happens if you modify default value of named argument in function?
+
+```
+>>> def f(val, l=[]):
+>>>     l.append(val)
+>>>     print l
+>>>
+>>> f(10)
+[10]
+>>> f(20)
+[10, 20]
+>>> # is it unexpected behavior? :-)
+
+>>> # now try with dist
+>>> def f(val, d={}):
+>>>     d[val] = val
+>>>     print d
+>>>
+>>> f(10)
+{10: 10}
+>>> f(20)
+{10: 10, 20: 20}
+>>> # it's also unexpected behavior!
+```
+
+As we can see - if you try to modify default value of mutable variable - this variable will change own default value. So, be careful! *It's potential place for bugs!*
