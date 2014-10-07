@@ -46,7 +46,7 @@ Example of tuple: `t = (1, 'a', True)` and list: `l = [1, 'a', True]`
 
 #### What happens if you modify default value of named argument in function?
 
-```
+```python
 >>> def f(val, l=[]):
 >>>     l.append(val)
 >>>     print l
