@@ -17,6 +17,14 @@ Questions list
 
 #### What types of data is used in python?
 
+Python provides some built-in data types: `dict`, `list`, `set`, `frozenset` and `tuple`.
+
+In **Python 2.x** we have `str` class that used to hold *binary data and 8-bit text*, and the `unicode` class to handle *Unicode text*.
+
+In **Python 3.x** we have `str` class that used to hold *Unicode strings*, and the `bytes` class is used to hold *binary data*.
+
+- [Python Data Types](https://docs.python.org/3/library/datatypes.html)
+
 #### What is `mutable` and `immutable` types?
 
 `Immutable` *(can't be changed in place, only replaced to new value)*: numbers, strings and tuples.
