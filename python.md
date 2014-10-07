@@ -57,7 +57,7 @@ Example of tuple: `t = (1, 'a', True)` and list: `l = [1, 'a', True]`
 [10, 20]
 >>> # is it unexpected behavior? :-)
 
->>> # now try with dist
+>>> # now try with dict
 >>> def f(val, d={}):
 >>>     d[val] = val
 >>>     print d
