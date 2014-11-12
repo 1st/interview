@@ -71,6 +71,7 @@ Example of tuple: `t = (1, 'a', True)` and list: `l = [1, 'a', True]`
 
 As we can see - if you try to modify default value of mutable variable - this variable will change own default value. So, be careful! *It's potential place for bugs!*
 
-### Good to know
+Good to know
+---------
 
  - [Porting Python 2 Code to Python 3](https://docs.python.org/3/howto/pyporting.html) - helps you to prepare your Python 2.x code to port on Python 3.x
