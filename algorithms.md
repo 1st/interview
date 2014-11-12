@@ -12,6 +12,10 @@ Questions list
 
 #### Create `sqrt` function
 
+```python
+code here
+```
+
 #### Find substring positon
 
 ```python
@@ -33,4 +37,30 @@ def find_substr(string, substr):
         if substr == string[i:i + len(substr)]:
             return True
     return False
+```
+
+#### Create function that return all string permutations
+
+Given string and we need to return all permutations of this string.
+
+
+```python
+def permute_string(original_string):
+    results = []
+    
+    if len(original_string) == 0:
+        return results
+
+    ch = original_string[0]
+    substrings = permute_string(original_string[1:])
+
+    if not substrings:
+        results.append(ch)
+
+    for substring in substrings:
+        for index in range(len(substring) + 1):
+            tmp_str = substring[0:index] + ch + substring[index:]
+            results.append(tmp_str)
+        
+    return results
 ```
