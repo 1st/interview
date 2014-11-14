@@ -2,7 +2,12 @@ Interview Questions & Answers
 =========
 
 
-When you prepare to **interview with company** like Google, Apple, Amazon, Microsoft or any other company or statup - you need to remember *(or learn)* specific questions from your area.
+When you prepare to **interview with company** you need to remember *(or learn)* specific questions from your area.
+
+I added most interested questions from my own interviews with **Google**, **Yelp** and other cool company. Thank you guys for your help in my learning process!
+
+Topics
+---------
 
 Here you find some topicts that help you prepare before interview:
 - [General interview questions](general_questions.md)
@@ -11,6 +16,10 @@ Here you find some topicts that help you prepare before interview:
 - [JavaScript](javascript.md)
 - [Databases](databases.md) including MySQL, PgSQL, MongoDB
 - [Algorithmic questions](algorithms.md) is a general part for all interviews on developer position
+
+
+Books & Articles
+---------
 
 Also you can read some good books that help increase your chances to be hired:
 - [Cracking the Coding Interview, 5th Edition](https://www.google.com.ua/search?q=Cracking+the+Coding+Interview,+5th+Edition) that tells you not only about technical skills, but also how to prepare yourself before interview
