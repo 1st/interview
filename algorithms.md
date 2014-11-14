@@ -46,6 +46,16 @@ Given string and we need to return all permutations of this string.
 
 ```python
 def permute_string(original_string):
+    '''
+    >>> permute_string('')
+    []
+    >>> permute_string('a')
+    ['a']
+    >>> permute_string('ab')
+    ['ab', 'ba']
+    >>> permute_string('abc')
+    ['abc', 'bac', 'bca', 'acb', 'cab', 'cba']
+    '''
     results = []
     
     if len(original_string) == 0:
