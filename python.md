@@ -13,7 +13,7 @@ Questions list
 
 `GIL` *(Global Interpreter Lock)* is a mutex that prevents multiple native threads from executing Python bytecodes at once. This lock is necessary mainly because CPython's memory management is not thread-safe.
 
-- [Global Interpreter Lock](https://wiki.python.org/moin/GlobalInterpreterLock)
+Read: [Global Interpreter Lock](https://wiki.python.org/moin/GlobalInterpreterLock)
 
 #### What types of data is used in python?
 
@@ -23,7 +23,7 @@ In **Python 2.x** we have `str` class that used to hold *binary data and 8-bit t
 
 In **Python 3.x** we have `str` class that used to hold *Unicode strings*, and the `bytes` class is used to hold *binary data*.
 
-- [Python Data Types](https://docs.python.org/3/library/datatypes.html)
+Read: [Python Data Types](https://docs.python.org/3/library/datatypes.html)
 
 #### What is `mutable` and `immutable` types?
 
@@ -41,6 +41,7 @@ Example of tuple: `t = (1, 'a', True)` and list: `l = [1, 'a', True]`
 
 `sets` is unordered collections of unique elements.
 
+Read:
 - [sets](https://docs.python.org/2/library/sets.html) basic info *(deprecated in python 2.6)*
 - [set](https://docs.python.org/2.7/library/stdtypes.html#set) type
 
