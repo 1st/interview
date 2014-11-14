@@ -72,6 +72,33 @@ Read:
 
 As we can see - if you try to modify default value of mutable variable - this variable will change own default value. So, be careful! *It's potential place for bugs!*
 
+#### Write test for function
+
+The easiest way to test function - is to use [doctest](https://docs.python.org/2/library/doctest.html) that built-in in Python.
+
+```python
+def my_range(x, y):
+    '''
+    This function return range from X to Y.
+    
+    >>> my_range(3, 3)
+    []
+    >>> my_range(0, 1)
+    [0]
+    >>> my_range(0, 3)
+    [0, 1, 2]
+    >>> my_range(1, 7)
+    [1, 2, 3, 4, 5, 6]
+    '''
+    return range(x, y)
+
+# run our tests
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
+```
+
+
 Good to know
 ---------
 
