@@ -12,12 +12,6 @@ Questions list
 
 See question **event.preventDefault() vs. return false** on [stackoverflow](http://stackoverflow.com/questions/1357118/)
 
-#### Question here
-
-```javascript
-console.log("Answer here");
-```
-
 
 Good to know
 ---------
