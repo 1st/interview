@@ -8,6 +8,9 @@ This chapter will help you to get answers on typical interview questions for **J
 Questions list
 ---------
 
+#### How to prevent to send form?
+
+See question **event.preventDefault() vs. return false** on [stackoverflow](http://stackoverflow.com/questions/1357118/)
 
 #### Question here
 
