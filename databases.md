@@ -10,7 +10,9 @@ Questions list
 
 #### What difference between `MyISAM` and `InnoDB`?
 
-`InnoDB` supports transations, foreign keys.
+`MyISAM` allow to create full-text search index, but doesn't have support of transactions and foreign keys.
+
+`InnoDB` supports transations and foreign keys.
 
 
 #### How to use `compotite key`?
