@@ -78,7 +78,7 @@ The easiest way to test function - is to use [doctest](https://docs.python.org/2
 
 ```python
 def my_range(x, y):
-    '''
+    """
     This function return range from X to Y.
     
     >>> my_range(3, 3)
@@ -89,7 +89,7 @@ def my_range(x, y):
     [0, 1, 2]
     >>> my_range(1, 7)
     [1, 2, 3, 4, 5, 6]
-    '''
+    """
     return range(x, y)
 
 # run our tests
