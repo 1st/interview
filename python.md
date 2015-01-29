@@ -90,7 +90,7 @@ def my_range(x, y):
     >>> my_range(1, 7)
     [1, 2, 3, 4, 5, 6]
     """
-    return range(x, y)
+    return list(range(x, y))
 
 # run our tests
 if __name__ == "__main__":
