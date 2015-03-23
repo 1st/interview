@@ -10,6 +10,11 @@ Be prepared for this type of questions in advance, because it's not easy questio
 Questions list
 ---------
 
+#### How to calculate function complexity?
+
+Read [Complexity function](http://en.wikipedia.org/wiki/Complexity_function) and [Big O notation](http://en.wikipedia.org/wiki/Big_O_notation).
+
+
 #### Create `sqrt` function
 
 ```python
