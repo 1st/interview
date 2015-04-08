@@ -98,6 +98,18 @@ if __name__ == "__main__":
     doctest.testmod()
 ```
 
+#### How to show source code of given function?
+
+We can show source code of function with `inspect` package.
+
+```python
+>>> from django.core.context_processors import request
+>>> import inspect
+>>> print inspect.getsource(request)
+def request(request):
+    return {'request': request}
+```
+
 
 Good to know
 ---------
