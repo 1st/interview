@@ -21,5 +21,5 @@ Here you find some topicts that help you prepare to interview:
 Books & Articles
 ---------
 
-Also you can read some good books that help increase your chances to be hired:
+Also you can read some good books that can help increase your chances to be hired:
 - [Cracking the Coding Interview, 5th Edition](https://www.google.com.ua/search?q=Cracking+the+Coding+Interview,+5th+Edition) that tells you not only about technical skills, but also how to prepare yourself before interview
