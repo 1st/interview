@@ -5,6 +5,12 @@ Interview Questions for Python developer
 This chapter will help you to get answers on typical interview questions for **Python developer** role.
 
 
+Read this first
+---------
+
+- What is [Iterators](https://wiki.python.org/moin/Iterator) and [Generators](https://wiki.python.org/moin/Generators)
+
+
 Questions list
 ---------
 
@@ -39,11 +45,15 @@ Example of tuple: `t = (1, 'a', True)` and list: `l = [1, 'a', True]`
 
 #### What is `set`?
 
-`sets` is unordered collections of unique elements.
+`sets` is unordered collections of unique elements. In other words - `set` is a hast table that stored similar to keys in `dict` data type.
 
 Read:
 - [sets](https://docs.python.org/2/library/sets.html) basic info *(deprecated in python 2.6)*
 - [set](https://docs.python.org/2.7/library/stdtypes.html#set) type
+
+
+Coding examples
+---------
 
 #### What happens if you modify default value of named argument in function?
 
@@ -103,8 +113,8 @@ if __name__ == "__main__":
 We can show source code of function with `inspect` package.
 
 ```python
->>> from django.core.context_processors import request
 >>> import inspect
+>>> from django.core.context_processors import request
 >>> print inspect.getsource(request)
 def request(request):
     return {'request': request}
