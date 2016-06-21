@@ -29,7 +29,7 @@ code here
 ```python
 # general language-independent implementation
 def find_substr(string, substr):
-    for i in range(0, len(string)):
+    for i in range(0, len(string) - len(substring) + 1):
         for j in range(0, len(substr)):
             if substr[j] != string[i + j]:
                 break
@@ -41,10 +41,7 @@ def find_substr(string, substr):
 ```python
 # pythonic implementation with string slice
 def find_substr(string, substr):
-    for i in range(0, len(string)):
-        if substr == string[i:i + len(substr)]:
-            return True
-    return False
+    return any(substr == string[i:i + len(substr)] for i in range(len(string) - len(substr) + 1))
 ```
 
 #### Create function that return all string permutations
