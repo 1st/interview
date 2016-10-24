@@ -29,7 +29,7 @@ code here
 ```python
 # general language-independent implementation
 def find_substr(string, substr):
-    for i in range(0, len(string) - len(substring) + 1):
+    for i in range(0, len(string) - len(substr) + 1):
         for j in range(0, len(substr)):
             if substr[j] != string[i + j]:
                 break
