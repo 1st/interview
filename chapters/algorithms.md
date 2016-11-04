@@ -29,6 +29,30 @@ code here
 ```python
 # general language-independent implementation
 def find_substr(string, substr):
+    """
+    >>> find_substr('', '')
+    True
+    >>> find_substr('', 'a')
+    False
+    >>> find_substr('a', '')
+    True
+    >>> find_substr('a', 'a')
+    True
+    >>> find_substr('a', 'aa')
+    False
+    >>> find_substr('aa', 'a')
+    True
+    >>> find_substr('abc', 'abc')
+    True
+    >>> find_substr('abcd', 'abc')
+    True
+    >>> find_substr('ababc', 'abc')
+    True
+    >>> find_substr('ababcd', 'abc')
+    True
+    >>> find_substr('abcabc', 'abcd')
+    False
+    """
     for i in range(0, len(string) - len(substr) + 1):
         for j in range(0, len(substr)):
             if substr[j] != string[i + j]:
