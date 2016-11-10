@@ -13,6 +13,7 @@ Here you find some topicts that help you prepare to interview:
 - [General interview questions](general_questions.md)
 - [Web development](web_development.md)
 - [Python](python.md)
+- [Java](java.md)
 - [JavaScript](javascript.md)
 - [Databases](databases.md) including [MySQL](http://mysql.com), [PostgreSQL](http://postgresql.org), [MongoDB](http://mongodb.org)
 - [Algorithmic questions](algorithms.md) is a general part for all interviews on developer position
