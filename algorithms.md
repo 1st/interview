@@ -6,6 +6,9 @@ This chapter will help you to get answers on typical interview questions for **a
 This is **Algorithmic questions** that you will hear on your next interview.
 Be prepared for this type of questions in advance, because it's not easy questions and you need to understand it, not only read answers.
 
+> **Note.** I've created a mini-book to help you prepare for the algorithmic questions.
+> Find time to read [my free book](https://github.com/1st/algorithms/) on github.
+
 
 Questions list
 ---------
