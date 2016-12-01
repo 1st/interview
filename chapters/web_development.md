@@ -9,7 +9,7 @@ Questions list
 ---------
 
 
-#### What is HTTP and TCP
+#### What are HTTP and TCP
 
 - Read [Hypertext Transfer Protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol) on wikipedia
 - Read [Transmission Control Protocol](https://en.wikipedia.org/wiki/Transmission_Control_Protocol)
