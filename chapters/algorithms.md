@@ -29,7 +29,8 @@ code here
 ```python
 # general language-independent implementation
 def find_substr(string, substr):
-    """
+    """Check if string contains substring.
+
     >>> find_substr('', '')
     True
     >>> find_substr('', 'a')
