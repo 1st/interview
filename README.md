@@ -22,5 +22,6 @@ Books & Articles
 ---------
 
 Also you can read some good books that can help increase your chances to be hired:
-- [Cracking the Coding Interview, 5th Edition](https://www.google.com.ua/search?q=Cracking+the+Coding+Interview,+5th+Edition) that tells you not only about technical skills, but also how to prepare yourself before interview
+- [Cracking the Coding Interview, 6th Edition](https://google.com/search?q=Cracking+the+Coding+Interview,+6th+Edition) that tells you not only about technical skills, but also how to prepare yourself before interview
+- [Introduction to Algorithms. Thomas Cormen](https://google.com/search?q=Cormen+Algorithms)
 - [Algorithms and Data Structures](https://github.com/1st/algorithms/) mini-book
