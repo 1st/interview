@@ -17,6 +17,12 @@ Here you find some topicts that help you prepare to interview:
 - [Databases](chapters/databases.md) including MySQL, PostgreSQL and MongoDB
 - [Algorithmic questions](chapters/algorithms.md) is a general part for all interviews on developer position
 
+Data Structures & Algorithms
+---------
+
+All links below are follow to the external websites.
+
+- (Disjoint-set data structure)[https://en.wikipedia.org/wiki/Disjoint-set_data_structure]. Used to join few sets those have partial overlapping.
 
 Books & Articles
 ---------
