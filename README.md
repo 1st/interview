@@ -22,7 +22,7 @@ Data Structures & Algorithms
 
 All links below are follow to the external websites.
 
-- (Disjoint-set data structure)[https://en.wikipedia.org/wiki/Disjoint-set_data_structure]. Used to join few sets those have partial overlapping.
+- [Disjoint-set data structure](https://en.wikipedia.org/wiki/Disjoint-set_data_structure). Used to join few sets those have partial overlapping.
 
 Books & Articles
 ---------
