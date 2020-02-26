@@ -10,7 +10,6 @@ git branch -a
 # Show only remote branches
 git branch -r
 ```
-Source: [](https://www.jquery-az.com/list-branches-git/)
 
 ### Q: How to find merged/unmerged branches in git?
 
