@@ -16,6 +16,7 @@ Here you find some topicts that help you prepare to interview:
 - [JavaScript](chapters/javascript.md)
 - [Databases](chapters/databases.md) including MySQL, PostgreSQL and MongoDB
 - [Algorithmic questions](chapters/algorithms.md) is a general part for all interviews on developer position
+- [Git](chapters/git.md)
 
 Data Structures & Algorithms
 ---------
