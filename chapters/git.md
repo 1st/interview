@@ -43,3 +43,11 @@ git checkout thefiletoreset.txt
 git reset --hard
 ```
 Source: [StackOverflow](https://stackoverflow.com/a/675797/718722)
+
+### Q: Merging vs. Rebasing
+
+Source: [Atlassian](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
+
+## Other topics
+
+- [Advanced Git Tutorials](https://www.atlassian.com/git/tutorials/advanced-overview) by Atlassian
