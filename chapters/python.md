@@ -52,6 +52,18 @@ Read:
 - [set](https://docs.python.org/2.7/library/stdtypes.html#set) type
 
 
+#### Floats VS Decimals
+
+Given a code that produces "strange" result:
+```python
+>>> 0.1 + 0.1 + 0.1 - 0.3
+5.551115123125783e-17
+```
+Please fix it to produce a "correct" result `0.0`.
+
+**Hint:** read about (Decimals)[https://docs.python.org/3/library/decimal.html] in Python.
+
+
 Coding examples
 ---------
 
