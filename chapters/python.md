@@ -61,7 +61,7 @@ Given a code that produces "strange" result:
 ```
 Please fix it to produce a "correct" result `0.0`.
 
-**Hint:** read about (Decimals)[https://docs.python.org/3/library/decimal.html] in Python.
+**Hint:** read about [Decimals](https://docs.python.org/3/library/decimal.html) in Python.
 
 
 Coding examples
