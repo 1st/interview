@@ -11,7 +11,7 @@ Topics
 Here you find some topicts that help you prepare to interview:
 - [General interview questions](chapters/general_questions.md)
 - [Web development](chapters/web_development.md)
-- [Python](chapters/python.md)
+- [Python](chapters/python.md) and [Django](chapters/django.md)
 - [Java](chapters/java.md)
 - [JavaScript](chapters/javascript.md)
 - [Databases](chapters/databases.md) including MySQL, PostgreSQL and MongoDB
