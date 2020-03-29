@@ -22,7 +22,7 @@ Questions list
 For example, we have table `users` with 3 columns: `name`, `age` and `company_name`. We have composite key for all 3 columns `KEY (name, age, company_name)`. In this case we can search user by `name` OR by `name` and `age` OR by `name`, `age` and `company_name`. But we can't search by `age` or `company_name` because index should find `name` before go forward to search by next column. To search by `age` or `company_name` we need to create an additonal index.
 
 
-Good to read
+Good to know
 ---------
 
  * [Partial index](https://en.wikipedia.org/wiki/Partial_index)
