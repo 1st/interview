@@ -2,6 +2,11 @@
 
 Use this guide to re-ground yourself in Python language fundamentals, runtime characteristics, and coding exercises that often surface in interviews. Also review the dedicated [Django interview refresh](django.md) for framework-specific questions.
 
+## Cheat Sheet
+- Define the GIL impact and when to reach for multiprocessing or async alternatives.
+- Contrast mutable vs immutable types and how that affects function arguments.
+- Explain text vs bytes handling in Python 3 and interoperability with external systems.
+
 ## Quick Refresh
 - Explain the Global Interpreter Lock (GIL) and how it affects multithreading in CPython.
 - Differentiate between Python’s core built-in data structures and when to use each.

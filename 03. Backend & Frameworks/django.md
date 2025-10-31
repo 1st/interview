@@ -2,6 +2,11 @@
 
 Keep these ORM patterns and framework concepts handy so you can surface Django-specific depth quickly. Pair this with the [Python interview refresh](python.md) for language fundamentals.
 
+## Cheat Sheet
+- Outline Django’s request flow: URL routing → view → ORM → template → response.
+- Differentiate `select_related` vs `prefetch_related` with a concrete performance example.
+- Mention auth customizations (custom user model, signals, permissions) when discussing security.
+
 ## Quick Refresh
 - Explain Django’s MTV (Model-Template-View) architecture and request lifecycle.
 - Contrast `select_related` vs `prefetch_related` and when to apply each for query optimization.

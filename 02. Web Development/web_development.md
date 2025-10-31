@@ -2,6 +2,11 @@
 
 Re-center on fundamental web platform concepts so you can confidently explain request flows, security risks, and modern service communication patterns.
 
+## Cheat Sheet
+- Trace the full HTTP request path including DNS, TLS, CDN, app, and database layers.
+- Define XSS variants and prevention techniques (encode output, CSP, sanitization).
+- Compare REST vs gRPC and note why teams adopt HTTP/2 streaming for microservices.
+
 ## Quick Refresh
 - Map the HTTP request lifecycle, including DNS, TLS, proxies, and caching layers.
 - Distinguish between transport (TCP) and application (HTTP) responsibilities.

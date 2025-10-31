@@ -2,6 +2,11 @@
 
 Revisit JVM fundamentals and language features that frequently appear in Java interview conversations.
 
+## Cheat Sheet
+- Explain autoboxing costs and prefer primitives in hot code paths where possible.
+- Summarize how the JVM manages memory (heap regions, GC pauses, tuning levers).
+- Highlight concurrency utilities (executors, CompletableFuture) and how you avoid race conditions.
+
 ## Quick Refresh
 - Clarify the difference between primitives and wrapper classes, including autoboxing costs.
 - Review memory management concepts: heap vs stack, garbage collection tuning, escape analysis.

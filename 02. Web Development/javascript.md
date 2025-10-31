@@ -2,6 +2,11 @@
 
 Focus on browser fundamentals, event handling, and language quirks to keep your JavaScript interviews sharp.
 
+## Cheat Sheet
+- Describe the event loop and microtask queue when explaining async behavior.
+- Know when to use `event.preventDefault()` vs returning `false` in handlers.
+- Share how `"use strict"` impacts `this`, variable declarations, and silent failures.
+
 ## Quick Refresh
 - Explain event propagation (capture, target, bubble) and how `event.preventDefault()` differs from returning `false`.
 - Revisit ES modules versus CommonJS and how bundlers/transpilers affect delivery.

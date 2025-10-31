@@ -2,6 +2,11 @@
 
 Reinforce relational storage fundamentals so you can articulate trade-offs, indexing strategies, and engine capabilities in interviews.
 
+## Cheat Sheet
+- Know when to pick transactional engines (InnoDB, PostgreSQL) vs simpler storage (MyISAM).
+- Apply leftmost prefix rules to composite indexes and explain query plan impacts.
+- Discuss tooling for diagnosing slow queries (EXPLAIN, slow query logs, monitoring dashboards).
+
 ## Quick Refresh
 - Compare storage engines (e.g., MyISAM vs InnoDB) with respect to transactions, foreign keys, and indexing.
 - Explain how composite indexes work and when additional single-column indexes are still needed.

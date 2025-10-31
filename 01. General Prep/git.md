@@ -2,6 +2,11 @@
 
 Keep these branches, cleanup commands, and conceptual contrasts top of mind so you can speak confidently about Git workflows in interviews.
 
+## Cheat Sheet
+- Use `git branch`, `-a`, and `-r` to show scope; know how to target remotes quickly.
+- Explain merge vs rebase with a team workflow example and conflict handling plan.
+- Safely clean the working tree: dry-run `git clean -n` before deleting untracked files.
+
 ## Quick Refresh
 - List and filter branches locally and across remotes when walking through repo discovery.
 - Explain how you identify merged versus unmerged branches before cleanup.

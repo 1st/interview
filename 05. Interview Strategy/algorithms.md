@@ -2,6 +2,11 @@
 
 Use this chapter as a conversation prep guide for the algorithm portion of interviews. Keep actual coding drills, deep explanations, and implementations in the dedicated [Algorithms & Data Structures repository](https://github.com/1st/algorithms/).
 
+## Cheat Sheet
+- Start answers with complexity targets (`O(n log n)` etc.) and mention trade-offs quickly.
+- Narrate problem-solving steps: clarify, plan, code, test, optimize.
+- Keep a mental map of key data structures (arrays, hash maps, trees, graphs) and go-to patterns.
+
 ## Quick Refresh
 - Recall how to describe time and space complexity using Big O, and rehearse concise definitions for `O(1)`, `O(n log n)`, and `O(n^2)`.
 - Be ready to narrate your problem-solving process: clarify requirements, outline approach, validate with examples, and discuss trade-offs.
