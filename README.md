@@ -33,8 +33,19 @@ A focused refresher for software engineers who need to get back to interview sha
 ### 05. Interview Strategy
 - [Overview](05.%20Interview%20Strategy/overview.md)
 - [Algorithmic questions](05.%20Interview%20Strategy/algorithms.md) — high-level framing; defer detailed practice to the dedicated Algorithms & Data Structures repo.
-- Behavioral Interview Playbook _(coming soon)_
-- System Design Refresher _(coming soon — caching, load balancing, API gateways, resiliency patterns)_
+
+### 06. Behavioral Interviews
+- [Overview](06.%20Behavioral%20Interviews/overview.md)
+- [Behavioral Interview Playbook](06.%20Behavioral%20Interviews/behavioral_playbook.md)
+- [Behavioral Interview Question Bank](06.%20Behavioral%20Interviews/behavioral_questions.md)
+
+### 07. System Design
+- [Overview](07.%20System%20Design/overview.md)
+- [System Design Refresher](07.%20System%20Design/system_design_refresher.md)
+- Load Balancer Deep Dive _(coming soon)_
+- API Gateway Deep Dive _(coming soon)_
+- Caching Strategies _(coming soon)_
+- Data Sharding & Storage Tiering _(coming soon)_
 
 ## How to Use This Repository
 - Start with **Quick Ramp-Up** when you only have a few minutes.
