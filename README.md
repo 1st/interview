@@ -46,6 +46,8 @@ A focused refresher for software engineers who need to get back to interview sha
 - [API Gateway Deep Dive](07.%20System%20Design/api_gateway.md)
 - [Caching Strategies](07.%20System%20Design/caching_strategies.md)
 - [Data Sharding & Storage Tiering](07.%20System%20Design/data_sharding.md)
+- [System Design Glossary](07.%20System%20Design/system_design_glossary.md)
+- Microservices Architecture _(coming soon)_
 
 ## How to Use This Repository
 - Start with **Quick Ramp-Up** when you only have a few minutes.
