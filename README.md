@@ -10,24 +10,31 @@ A focused refresher for software engineers who need to get back to interview sha
 ## Table of Contents
 
 ### 01. General Prep
+- [Overview](01.%20General%20Prep/overview.md)
 - [General interview questions](01.%20General%20Prep/general_questions.md)
 - [Authentication vs Authorization](01.%20General%20Prep/authentication_vs_authorization.md)
 - [Git](01.%20General%20Prep/git.md)
 
 ### 02. Web Development
+- [Overview](02.%20Web%20Development/overview.md)
 - [Web development](02.%20Web%20Development/web_development.md)
 - [JavaScript](02.%20Web%20Development/javascript.md)
 
 ### 03. Backend & Frameworks
+- [Overview](03.%20Backend%20%26%20Frameworks/overview.md)
 - [Python](03.%20Backend%20%26%20Frameworks/python.md)
 - [Django](03.%20Backend%20%26%20Frameworks/django.md)
 - [Java](03.%20Backend%20%26%20Frameworks/java.md)
 
 ### 04. Data & Storage
+- [Overview](04.%20Data%20%26%20Storage/overview.md)
 - [Databases](04.%20Data%20%26%20Storage/databases.md)
 
 ### 05. Interview Strategy
+- [Overview](05.%20Interview%20Strategy/overview.md)
 - [Algorithmic questions](05.%20Interview%20Strategy/algorithms.md) — high-level framing; defer detailed practice to the dedicated Algorithms & Data Structures repo.
+- Behavioral Interview Playbook _(coming soon)_
+- System Design Refresher _(coming soon — caching, load balancing, API gateways, resiliency patterns)_
 
 ## How to Use This Repository
 - Start with **Quick Ramp-Up** when you only have a few minutes.
