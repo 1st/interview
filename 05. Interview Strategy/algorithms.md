@@ -6,6 +6,7 @@ Use this chapter as a conversation prep guide for the algorithm portion of inter
 - Start answers with complexity targets (`O(n log n)` etc.) and mention trade-offs quickly.
 - Narrate problem-solving steps: clarify, plan, code, test, optimize.
 - Keep a mental map of key data structures (arrays, hash maps, trees, graphs) and go-to patterns.
+- State your assumptions aloud, align on input constraints, and flag potential trade-offs before coding.
 
 ## Quick Refresh
 - Recall how to describe time and space complexity using Big O, and rehearse concise definitions for `O(1)`, `O(n log n)`, and `O(n^2)`.
@@ -33,6 +34,16 @@ Use this chapter as a conversation prep guide for the algorithm portion of inter
 ### Dynamic Programming Narratives
 - Present the “overlapping subproblems + optimal substructure” definition succinctly.
 - Show you can move from recursion to tabulation and reason about memory trade-offs.
+
+## Interview Framing Tips
+- **Clarify first:** Restate the prompt, confirm input format, size limits, data ranges, and edge cases.
+- **Outline aloud:** Share the approach before coding; compare brute force vs optimized strategies.
+- **Sample walkthrough:** Run through a non-trivial example step by step. Use it to verify your algorithm and catch off-by-one errors.
+- **Complexity statement:** Commit to time/space complexity up front and revisit after coding to confirm.
+- **Coding style:** Use clean variable names, modular helper functions, and narrate what you’re typing.
+- **Testing:** Execute your example plus edge cases (empty, singleton, extremes) verbally. Mention how you’d test in production.
+- **Refinement:** Proactively discuss optimizations, trade-offs, or alternative data structures even if you shipped a working version.
+- **Learning loop:** Tie the outcome back to prior practice — reference similar problems from the [Algorithms & Data Structures repository](https://github.com/1st/algorithms/).
 
 ## Deep Dive Later
 - Schedule focused coding sessions in the Algorithms & Data Structures repo to reinforce techniques.
