@@ -42,8 +42,8 @@ A focused refresher for software engineers who need to get back to interview sha
 ### 07. System Design
 - [Overview](07.%20System%20Design/overview.md)
 - [System Design Refresher](07.%20System%20Design/system_design_refresher.md)
-- Load Balancer Deep Dive _(coming soon)_
-- API Gateway Deep Dive _(coming soon)_
+- [Load Balancer Deep Dive](07.%20System%20Design/load_balancer.md)
+- [API Gateway Deep Dive](07.%20System%20Design/api_gateway.md)
 - Caching Strategies _(coming soon)_
 - Data Sharding & Storage Tiering _(coming soon)_
 
