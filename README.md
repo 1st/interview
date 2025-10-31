@@ -45,7 +45,7 @@ A focused refresher for software engineers who need to get back to interview sha
 - [Load Balancer Deep Dive](07.%20System%20Design/load_balancer.md)
 - [API Gateway Deep Dive](07.%20System%20Design/api_gateway.md)
 - [Caching Strategies](07.%20System%20Design/caching_strategies.md)
-- Data Sharding & Storage Tiering _(coming soon)_
+- [Data Sharding & Storage Tiering](07.%20System%20Design/data_sharding.md)
 
 ## How to Use This Repository
 - Start with **Quick Ramp-Up** when you only have a few minutes.
