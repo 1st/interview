@@ -1,34 +1,46 @@
-Interview Questions & Answers
-=========
+# Interview Questions & Answers
 
+A focused refresher for software engineers who need to get back to interview shape fast, with deep-dive sections for longer study sessions.
 
-When you prepare to **interview with a company** you need to remember *(or learn)* specific questions from your area.
-I have added most interesting questions from my own interviews with well known companies.
+## Quick Ramp-Up (10–15 minutes)
+- Skim `General Prep` items to re-activate interview mindset and communication patterns.
+- Revisit one technical section that matches your next interview (e.g. Web, Python, Databases) and jot down gaps.
+- Consult your dedicated Algorithms & Data Structures repository for a fast coding warm-up; keep this repo focused on broader interview readiness.
 
-Topics
----------
+## Table of Contents
 
-Here you find some topicts that help you prepare to interview:
-- [General interview questions](chapters/general_questions.md)
-- [Web development](chapters/web_development.md)
-- [Python](chapters/python.md) and [Django](chapters/django.md)
-- [Java](chapters/java.md)
-- [JavaScript](chapters/javascript.md)
-- [Databases](chapters/databases.md) including MySQL, PostgreSQL and MongoDB
-- [Algorithmic questions](chapters/algorithms.md) is a general part for all interviews on developer position
-- [Git](chapters/git.md)
+### 01. General Prep
+- [General interview questions](01.%20General%20Prep/general_questions.md)
+- [Authentication vs Authorization](01.%20General%20Prep/authentication_vs_authorization.md)
+- [Git](01.%20General%20Prep/git.md)
 
-Data Structures & Algorithms
----------
+### 02. Web Development
+- [Web development](02.%20Web%20Development/web_development.md)
+- [JavaScript](02.%20Web%20Development/javascript.md)
 
-All links below are follow to the external websites.
+### 03. Backend & Frameworks
+- [Python](03.%20Backend%20%26%20Frameworks/python.md)
+- [Django](03.%20Backend%20%26%20Frameworks/django.md)
+- [Java](03.%20Backend%20%26%20Frameworks/java.md)
 
-- [Disjoint-set data structure](https://en.wikipedia.org/wiki/Disjoint-set_data_structure). Used to join few sets those have partial overlapping.
+### 04. Data & Storage
+- [Databases](04.%20Data%20%26%20Storage/databases.md)
 
-Books & Articles
----------
+### 05. Interview Strategy
+- [Algorithmic questions](05.%20Interview%20Strategy/algorithms.md) — high-level framing; defer detailed practice to the dedicated Algorithms & Data Structures repo.
 
-Also you can read some good books that can help increase your chances to be hired:
-- [Cracking the Coding Interview, 6th Edition](https://google.com/search?q=Cracking+the+Coding+Interview,+6th+Edition) that tells you not only about technical skills, but also how to prepare yourself before interview
-- [Introduction to Algorithms. Thomas Cormen](https://google.com/search?q=Cormen+Algorithms)
-- [Algorithms and Data Structures](https://github.com/1st/algorithms/) mini-book
+## How to Use This Repository
+- Start with **Quick Ramp-Up** when you only have a few minutes.
+- Dive into the linked sections for refreshed explanations, example answers, and external references.
+- Add personal notes in each section to capture stories, metrics, or differentiators for your interviews.
+- Keep deep algorithm drills in the separate Algorithms & Data Structures repository to avoid overlap.
+
+## External References
+
+### Data Structures & Algorithms
+- [Disjoint-set data structure](https://en.wikipedia.org/wiki/Disjoint-set_data_structure) — efficient for joining overlapping sets.
+
+### Books & Articles
+- [Cracking the Coding Interview, 6th Edition](https://google.com/search?q=Cracking+the+Coding+Interview,+6th+Edition) — covers technical prep and soft skills.
+- [Introduction to Algorithms. Thomas Cormen](https://google.com/search?q=Cormen+Algorithms) — foundational algorithms reference.
+- [Algorithms and Data Structures](https://github.com/1st/algorithms/) — concise GitHub mini-book.
