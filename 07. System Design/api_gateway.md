@@ -54,3 +54,8 @@ Highlight how API gateways centralize cross-cutting concerns, simplify client in
 - Evaluate gateway offerings (AWS API Gateway, Kong, Apigee, Azure API Management) and pricing models.
 - Prototype a lightweight gateway with Kong or Envoy; experiment with plugins for auth and rate limiting.
 - Study case studies of API monetization and developer portal management for storytelling content.
+
+## Diagram Ideas
+- Request flow diagram: client → API gateway (auth, rate limiting, routing) → multiple microservices/BFFs.
+- Component view: gateway integrating WAF, analytics, developer portal, and service discovery.
+- Deployment topology: managed gateway vs self-hosted cluster with control plane/data plane separation.

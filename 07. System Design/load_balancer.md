@@ -10,6 +10,7 @@ Use this guide to explain load balancers quickly, cover common follow-up questio
 
 ## Quick Refresh
 - **Core function:** Accept client connections, select a healthy backend, and proxy the request/response.
+- **Edge integration:** Assume upstream CDN/WAF handles DDoS scrubbing before traffic reaches the load balancer; ensure health checks and rate limits align across layers.
 - **Algorithms:** Round-robin, least connections, weighted, IP hash, random with two choices. Know when each applies.
 - **Health Monitoring:** TCP pings vs HTTP health endpoints; consider warmup time, circuit breaking, auto-removal.
 - **Session Affinity:** Cookie-based or IP-based stickiness to support stateful backends; discuss downsides (hot spots, failover).
@@ -53,3 +54,8 @@ Use this guide to explain load balancers quickly, cover common follow-up questio
 - Review vendor docs: AWS ALB/NLB, Google Cloud LB, Azure Front Door.
 - Experiment with HAProxy or Envoy configs locally; practice weighted routing and health checks.
 - Study SRE postmortems involving load balancing misconfigurations to gather storytelling ammo.
+
+## Diagram Ideas
+- Sequence diagram: client → DNS → load balancer → healthy backend with health-check feedback loop.
+- Architecture sketch: cross-zone load balancers feeding auto-scaled instances, highlighting blue/green weights.
+- Failure timeline: unhealthy node detection, removal, and reintegration after health checks pass.

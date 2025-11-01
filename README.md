@@ -40,6 +40,7 @@ A focused refresher for software engineers who need to get back to interview sha
 - [Behavioral Interview Question Bank](06.%20Behavioral%20Interviews/behavioral_questions.md)
 
 ### 07. System Design
+Start with the refresher for the end-to-end flow (edge DDoS shield → load balancer → services → data), then dive into specific components below.
 - [Overview](07.%20System%20Design/overview.md)
 - [System Design Refresher](07.%20System%20Design/system_design_refresher.md)
 - [Load Balancer Deep Dive](07.%20System%20Design/load_balancer.md)
@@ -48,6 +49,7 @@ A focused refresher for software engineers who need to get back to interview sha
 - [Data Sharding & Storage Tiering](07.%20System%20Design/data_sharding.md)
 - [System Design Glossary](07.%20System%20Design/system_design_glossary.md)
 - Microservices Architecture _(coming soon)_
+- Kubernetes Operations _(coming soon)_
 
 ## How to Use This Repository
 - Start with **Quick Ramp-Up** when you only have a few minutes.

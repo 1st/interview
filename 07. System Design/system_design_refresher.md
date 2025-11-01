@@ -1,6 +1,6 @@
 # System Design Refresher
 
-Use this guide to frame architecture discussions quickly, explain trade-offs, and dive deeper into specific components when needed.
+Use this guide to frame architecture discussions quickly, explain trade-offs, and see how edge defense, load balancing, services, and data layers compose before diving into component-specific guides.
 
 ## Cheat Sheet
 - Start with the north star: product goals, scale assumptions (traffic, data, latency, availability).
@@ -14,7 +14,7 @@ Use this guide to frame architecture discussions quickly, explain trade-offs, an
 - **Data Design:** Choose storage models (SQL, NoSQL, search) based on access patterns. Mention partitioning, replication, and schema evolution.
 - **Scaling Patterns:** Explain horizontal vs vertical scaling, stateless services, autoscaling, and multi-region replication. Know when to leverage managed services.
 - **Resiliency:** Cover health checks, load balancing, failover, backoff/retry policies, circuit breakers, and observability (metrics, traces, logs).
-- **Security:** Touch on auth/authz, secrets management, encryption, rate limiting, and API gateway concerns.
+- **Security & Edge Defense:** Touch on auth/authz, secrets management, encryption, rate limiting, WAF/CDN-based DDoS protection, and API gateway concerns.
 
 ## Core Components
 
@@ -22,6 +22,11 @@ Use this guide to frame architecture discussions quickly, explain trade-offs, an
 - Routes traffic across healthy backend instances; supports layer 4 (TCP) or layer 7 (HTTP) balancing.
 - Implements health checks, stickiness, and traffic splitting for blue/green or canary deployments.
 - Failure modes: unhealthy instance churn, uneven load distribution, single-region outages. Mitigations include cross-zone balancing and auto-scaling integrations.
+
+### Edge Protection (CDN / WAF / DDoS Shield)
+- CDN/WAF sits in front of load balancers to absorb volumetric attacks, cache static assets, and enforce threat rules.
+- Integrates with DDoS scrubbing centers and rate limiting to drop malicious traffic before it hits the application tier.
+- Coordinate logging and alerting to escalate when attack thresholds are exceeded; rehearse failover to alternate providers.
 
 ### API Gateway
 - Central entry point for client requests; handles routing, authentication, rate limiting, and request transformation.
@@ -47,3 +52,8 @@ Use this guide to frame architecture discussions quickly, explain trade-offs, an
 - Explore managed offerings (AWS ALB, API Gateway, CloudFront, DynamoDB, RDS, GCP equivalents) and their limitations.
 - Study real-world postmortems to sharpen failure analysis stories.
 - Maintain glossaries for consistency models (strong, eventual, causal) and messaging patterns (queues vs streams).
+
+## Diagram Ideas
+- High-level architecture: clients → CDN/WAF → load balancer → services → databases/queues/cache.
+- Sequence diagram for read/write paths highlighting consistency and caching touchpoints.
+- Failure game plan: visualizing circuit breaker, retry, and fallback interactions during an outage.

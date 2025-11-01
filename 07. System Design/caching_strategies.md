@@ -64,3 +64,8 @@ Explain how caches cut latency and load, manage consistency, and align with prod
 - Experiment with Redis features (Lua scripting, Redis Cluster, streams) or Memcached deployment.
 - Study CDN configurations (CloudFront, Fastly, Akamai) for edge cases like signed URLs and private content.
 - Build a simulation of cache hit/miss patterns using traffic traces to explain cost savings and trade-offs.
+
+## Diagram Ideas
+- Layered cache stack: client cache, CDN, application cache, database cache with arrows showing miss/hit flow.
+- Sequence diagram for cache-aside: request → cache miss → database → cache populate → response.
+- Heat map concept: shard/partition load before and after caching to illustrate hit-rate impact.

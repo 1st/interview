@@ -75,3 +75,8 @@ Explain how to split and replicate data intelligently to meet growth, latency, a
 - Explore sharding frameworks (Vitess for MySQL, Citus for PostgreSQL, Cosmos DB, DynamoDB global tables).
 - Study Spanner/CockroachDB for globally-distributed consistency models.
 - Prototype shard-aware services with consistent hashing libraries or proxy layers to build intuition.
+
+## Diagram Ideas
+- Shard map diagram: client → router → shard nodes with replication pairs.
+- Timeline of resharding: copy, dual writes, validation, cutover.
+- Multi-tenant layout: dedicated shards vs pooled shards highlighting noisy neighbor isolation.
