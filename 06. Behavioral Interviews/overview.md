@@ -1,7 +1,5 @@
 # Behavioral Interviews Overview
 
-Anchor every conversation in structured storytelling, measurable impact, and self-awareness.
+**STAR Story Crafting:** Anchor answers in Situation → Task → Action → Result, emphasize impact, and close with reflection; templates in [Behavioral Interview Playbook](behavioral_playbook.md).
 
-Practice your go-to STAR narratives for leadership, conflict, failure, and cross-functional wins in the [Behavioral Interview Playbook](behavioral_playbook.md).
-
-Build a question bank to ask interviewers about team culture, delivery cadence, and success metrics using the [Behavioral Interview Question Bank](behavioral_questions.md).
+**Question Bank:** Prepare thoughtful questions about team culture, delivery cadence, and success metrics with the [Behavioral Interview Question Bank](behavioral_questions.md).

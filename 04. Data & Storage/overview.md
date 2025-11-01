@@ -1,5 +1,5 @@
 # Data & Storage Overview
 
-Choose relational engines based on ACID guarantees, indexing features, and workload fit (OLTP vs analytics).
+**Engine Selection:** Pick databases based on ACID guarantees, indexing strengths, and OLTP vs analytics fit — check [Database Interview Refresh](databases.md).
 
-Apply leftmost-prefix rules when designing composite indexes, and lean on `EXPLAIN` plus slow-query logs to tune performance — all captured in the [Database Interview Refresh](databases.md).
+**Indexing & Tuning:** Apply leftmost-prefix rules and use `EXPLAIN` plus slow-query logs to tune performance; comparison table and more tips live in [Database Interview Refresh](databases.md).

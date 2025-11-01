@@ -1,7 +1,7 @@
 # Backend & Frameworks Overview
 
-Revisit Python by describing how the GIL shapes concurrency, contrasting mutable vs immutable types, and prepping quick doctest-style examples — extended notes live in [Python Interview Refresh](python.md).
+**Python Fundamentals:** Explain GIL impact, mutable vs immutable semantics, and doctest-style validation; see [Python Interview Refresh](python.md).
 
-For Django, remind yourself how `select_related` and `prefetch_related` tame query counts, how auth can be customized, and what caching or async add-ons support scaling, as captured in [Django Interview Refresh](django.md).
+**Django Patterns:** Show how `select_related`/`prefetch_related` cut query counts, customize auth, and layer caching/async features; review in [Django Interview Refresh](django.md).
 
-Round out with Java: compare primitives to wrappers (autoboxing costs), outline JVM memory and GC tuning levers, and highlight concurrency utilities such as `CompletableFuture`, with more detail in [Java Interview Refresh](java.md).
+**Java Essentials:** Contrast primitives vs wrappers (autoboxing cost), outline JVM memory/GC tuning, and highlight concurrency utilities like `CompletableFuture`; details in [Java Interview Refresh](java.md).

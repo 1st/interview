@@ -1,5 +1,5 @@
 # Web Development Overview
 
-Trace an HTTP request from DNS lookup through TLS, caches/CDNs, app servers, and persistence so you can articulate latency and scaling levers — see [Web Development Interview Refresh](web_development.md) for the full walkthrough.
+**HTTP Lifecycle:** Trace DNS → TLS → CDN → app → database to explain latency and scaling decisions. Quick recap: [Web Development Interview Refresh](web_development.md).
 
-Keep JavaScript top of mind by explaining the event loop, microtasks vs macrotasks, and the difference between `preventDefault()` and `return false`, while remembering `"use strict"` quirks; drill further with [JavaScript Interview Refresh](javascript.md).
+**JavaScript Fundamentals:** Revisit the event loop, microtasks vs macrotasks, and `preventDefault()` vs `return false`, including `"use strict"` implications. Details: [JavaScript Interview Refresh](javascript.md).

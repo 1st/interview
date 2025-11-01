@@ -1,5 +1,7 @@
 # Interview Strategy Overview
 
-Lead algorithm discussions by stating target complexities, narrating the clarify → plan → code → test loop, and mapping problems to go-to data structures; the talking points live in [Interview Questions with Algorithmic Tasks](algorithms.md).
+**Algorithms Framing:** Lead with complexity targets, narrate clarify → plan → code → test, and map problems to go-to data structures; quick cues in [Interview Questions with Algorithmic Tasks](algorithms.md).
 
-Use the dedicated Behavioral Interviews section for STAR storytelling materials, and the System Design section for architectural patterns once those guides are published.
+**Behavioral Playbook:** Jump to [Behavioral Interviews](../06.%20Behavioral%20Interviews/overview.md) for STAR storytelling guides and question banks.
+
+**System Design:** Leverage [System Design](../07.%20System%20Design/overview.md) for architectural flows, component deep dives, and glossary refreshers.
