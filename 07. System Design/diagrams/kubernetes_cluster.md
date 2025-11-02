@@ -35,7 +35,7 @@ graph TB
 
     subgraph Networking
         Ingress[Ingress Controller]
-        Service[Service (ClusterIP/LoadBalancer)]
+        Service[Service - ClusterIP/LoadBalancer]
         CNI[CNI Plugin]
     end
 
