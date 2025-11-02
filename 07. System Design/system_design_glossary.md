@@ -44,6 +44,7 @@ Keep these core terms at your fingertips when discussing distributed systems, re
 - **mTLS (Mutual TLS):** Both client and server present certificates for authentication.
 - **Rate Limiting:** Control request rate via token bucket, leaky bucket, or fixed window.
 - **Zero Trust:** Never trust, always verify; apply auth/authz at every boundary.
+- **Web Application Firewall (WAF):** Filters HTTP(S) traffic to block exploits (e.g., SQL injection, XSS) and often sits with CDN/DDoS layers before the load balancer.
 - **Service Mesh:** Infrastructure layer (e.g., Istio, Linkerd) providing traffic management, observability, and security for microservices.
 
 ## Cost & Efficiency
