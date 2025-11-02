@@ -48,8 +48,8 @@ Start with the refresher for the end-to-end flow (edge DDoS shield → load bala
 - [Caching Strategies](07.%20System%20Design/caching_strategies.md)
 - [Data Sharding & Storage Tiering](07.%20System%20Design/data_sharding.md)
 - [System Design Glossary](07.%20System%20Design/system_design_glossary.md)
-- Microservices Architecture _(coming soon)_
-- Kubernetes Operations _(coming soon)_
+- [Microservices Architecture](07.%20System%20Design/microservices.md)
+- [Kubernetes Operations](07.%20System%20Design/kubernetes.md)
 
 ## How to Use This Repository
 - Start with **Quick Ramp-Up** when you only have a few minutes.

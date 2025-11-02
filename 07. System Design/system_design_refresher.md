@@ -28,6 +28,13 @@ Use this guide to frame architecture discussions quickly, explain trade-offs, an
 - Integrates with DDoS scrubbing centers and rate limiting to drop malicious traffic before it hits the application tier.
 - Coordinate logging and alerting to escalate when attack thresholds are exceeded; rehearse failover to alternate providers.
 
+#### DDoS Mitigation Checklist
+- Traffic inspection: enable WAF rules, bot detection, and anomaly scoring at the edge provider.
+- Rate controls: configure global and per-client rate limits; propagate limits through API gateway policies.
+- Scrubbing & failover: contract managed DDoS scrubbing service or multi-CDN strategy with automated failover.
+- Network hardening: restrict direct access to load balancer IPs via ACLs/security groups; expose only via edge layer.
+- Runbooks & drills: maintain step-by-step response plans and rehearse load tests/attack simulations with stakeholders.
+
 ### API Gateway
 - Central entry point for client requests; handles routing, authentication, rate limiting, and request transformation.
 - Enables versioning, monetization, and observability across microservices.
