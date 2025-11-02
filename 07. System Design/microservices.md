@@ -60,3 +60,5 @@ Understand how to decompose, deploy, and operate services that collaborate witho
 ### Diagram Prep Notes
 1. Context map: note bounded contexts (e.g., Orders, Payments, Catalog) and shared components (gateway, discovery, observability stack).
 2. Request journey: map synchronous calls vs async events; label tracing spans to show propagation.
+
+See `diagrams/microservices_context.md` for the draft context map.
