@@ -3,6 +3,9 @@
 ```mermaid
 graph TD
     subgraph Control Plane
+    Clients[kubectl / CI Pipelines]
+
+    subgraph ControlPlane[Control Plane]
         APIServer[API Server]
         Controller[Controller Manager]
         Scheduler[Scheduler]
@@ -10,6 +13,7 @@ graph TD
     end
 
     subgraph Worker Nodes
+    subgraph WorkerPlane[Worker Nodes]
         subgraph Node1[Worker Node]
             Kubelet1[Kubelet]
             Proxy1[Kube-proxy]
@@ -21,9 +25,17 @@ graph TD
             Proxy2[Kube-proxy]
             Pod3[Pod C]
         end
+        NodeEllipsis[Other Nodes...] 
     end
 
     ClientKubectl[kubectl / CI] -->|REST| APIServer
+    subgraph Networking[Networking]
+        Ingress[Ingress Controller]
+        Service[Service (ClusterIP/LoadBalancer)]
+        CNI[CNI Plugin]
+    end
+
+    Clients -->|REST| APIServer
     APIServer --> Controller
     APIServer --> Scheduler
     APIServer --> Etcd
@@ -51,10 +63,11 @@ graph TD
     Service --> Pod1
     Service --> Pod2
     Service --> Pod3
+    CNI --> Pod1
+    CNI --> Pod2
 ```
 
 **Notes**
 - Control plane components manage desired state; workers run kubelet/kube-proxy and host pods.
-- CNI provides pod networking; services and ingress expose workloads.
-- External clients interact via `kubectl`/CI pipelines hitting the API server.
-```
+- Ingress and Services expose workloads; CNI provides pod networking.
+- External clients interact via `kubectl`/CI hitting the API server.
