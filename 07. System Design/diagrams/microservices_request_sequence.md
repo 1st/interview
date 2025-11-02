@@ -29,4 +29,3 @@ sequenceDiagram
 **Notes**
 - Sequence mixes synchronous calls with async events; highlight tracing spans and metrics.
 - Mention saga/compensation logic if payment or inventory fails.
-```

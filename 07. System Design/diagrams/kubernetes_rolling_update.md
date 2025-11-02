@@ -20,4 +20,3 @@ gantt
 **Notes**
 - With `maxSurge=1` and `maxUnavailable=1`, deployment keeps 4–5 pods during rollout.
 - Readiness probes must pass before shifting traffic; if they fail, rollout pauses/rolls back.
-```
