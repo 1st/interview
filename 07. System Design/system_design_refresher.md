@@ -35,6 +35,8 @@ Use this guide to frame architecture discussions quickly, explain trade-offs, an
 - Network hardening: restrict direct access to load balancer IPs via ACLs/security groups; expose only via edge layer.
 - Runbooks & drills: maintain step-by-step response plans and rehearse load tests/attack simulations with stakeholders.
 
+Reference the shared [DDoS Response Playbook](ddos_playbook.md) for a full preparation, detection, mitigation, and recovery workflow.
+
 ### API Gateway
 - Central entry point for client requests; handles routing, authentication, rate limiting, and request transformation.
 - Enables versioning, monetization, and observability across microservices.
