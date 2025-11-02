@@ -1,49 +1,65 @@
 # System Design Architecture Map (Draft)
 
 ```mermaid
-graph LR
+graph TD
     subgraph Clients
         A[Web Client]
         B[Mobile Client]
         C[Partner Integration]
     end
-    A -->|HTTPS| D[DNS]
-    B -->|HTTPS| D
-    C -->|HTTPS| D
-    D --> E[CDN / WAF / DDoS Shield]
-    E -->|Cached assets| A
-    E --> F[Regional Load Balancer]
+    subgraph Edge
+        D[DNS]
+        E[CDN / WAF / DDoS Shield]
+    end
+    subgraph Ingress
+        F[Regional Load Balancer]
+        G[API Gateway
+(Auth, Rate Limiting, Logging)]
+    end
     subgraph Services
-        G[API Gateway: Auth, Rate Limiting, Logging]
         H[Service A]
         I[Service B]
         J[Service C]
     end
-    F --> G
-    G --> H
-    G --> I
-    G --> J
-    H --> K[(Cache Layer)]
-    I --> K
-    J --> L[(Message Queue / Stream)]
-    K --> M[(Databases / Object Storage)]
-    I --> M
-    J --> M
-    L --> I
+    subgraph Data & Messaging
+        K[(Cache Layer)]
+        L[(Message Queue / Stream)]
+        M[(Databases / Object Storage)]
+    end
     subgraph Observability
         N[Metrics]
         O[Logs]
         P[Traces]
     end
+
+    A -->|HTTPS| D
+    B -->|HTTPS| D
+    C -->|HTTPS| D
+    D --> E
+    E -->|Sanitized traffic| F
+    F --> G
+    G --> H
+    G --> I
+    G --> J
+
+    H --> K
+    I --> K
+    J --> L
+    K --> M
+    I --> M
+    J --> M
+    L --> I
+
     H --> N
-    I --> N
-    J --> N
     H --> O
-    I --> O
-    J --> O
     H --> P
+    I --> N
+    I --> O
     I --> P
+    J --> N
+    J --> O
     J --> P
+
     N --> Q[Ops Dashboards]
     O --> Q
     P --> Q
