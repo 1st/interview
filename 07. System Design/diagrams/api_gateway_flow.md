@@ -7,8 +7,8 @@ graph TD
     Gateway -->|Auth / JWT validation| AuthService[Auth Provider]
     Gateway -->|Rate limit check| QuotaService[Quota Store]
     Gateway --> Router{Routing Rules}
-    Router --> ServiceA[Service A (REST)]
-    Router --> ServiceB[Service B (gRPC)]
+    Router --> ServiceA[Service A - REST]
+    Router --> ServiceB[Service B - gRPC]
     Router --> BFF[Mobile BFF]
     BFF --> ServiceC[Service C]
     ServiceA --> DB1[(DB / Cache)]
