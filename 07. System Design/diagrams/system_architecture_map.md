@@ -13,8 +13,7 @@ graph TD
     end
     subgraph Ingress
         F[Regional Load Balancer]
-        G[API Gateway
-(Auth, Rate Limiting, Logging)]
+        G[API Gateway: Auth, Rate Limiting, Logging]
     end
     subgraph Services
         H[Service A]
