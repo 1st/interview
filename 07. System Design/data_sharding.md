@@ -84,3 +84,5 @@ Explain how to split and replicate data intelligently to meet growth, latency, a
 ### Diagram Prep Notes
 1. Shard map: list shard IDs, primary/replica roles, and routing metadata service.
 2. Resharding timeline: capture phases (split, dual write, verification, cutover) with duration estimates.
+
+See `diagrams/data_sharding_map.md` for the current topology draft.

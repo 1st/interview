@@ -50,3 +50,5 @@ Refresh the essentials for deploying, scaling, and troubleshooting workloads on 
 ### Diagram Prep Notes
 1. Architecture: list control plane components (API server, etcd, controller-manager, scheduler) and worker pieces (kubelet, kube-proxy, CNI plugin).
 2. Rolling update: capture initial replica count, surge/unavailable settings, readiness probes gating traffic.
+
+Drafts: cluster overview (`diagrams/kubernetes_cluster.md`) and rolling update timeline (`diagrams/kubernetes_rolling_update.md`).
