@@ -9,9 +9,9 @@ graph TD
     Gateway --> Router{Routing Rules}
     Router --> ServiceA[Service A - REST]
     Router --> ServiceB[Service B - gRPC]
-    Router --> BFF[Mobile BFF]
+    Router --> BFF[Mobile BFF Service]
     BFF --> ServiceC[Service C]
-    ServiceA --> DB1[(DB / Cache)]
+    ServiceA --> DB1[(Database / Cache)]
     ServiceB --> DB2[(Message Queue / Stream)]
     ServiceC --> DB3[(Database)]
     Gateway --> Observability[Metrics / Logs / Traces]
@@ -21,5 +21,5 @@ graph TD
 **Notes**
 - Edge layer (CDN/WAF) handles DDoS and basic threat detection before the gateway.
 - Gateway enforces auth and rate limits, then routes based on path/version/client.
+- Mobile BFF (Backend for Frontend) tailors responses for mobile clients before calling downstream services.
 - Observability hooks capture metrics/logs/traces for downstream analysis.
-```
