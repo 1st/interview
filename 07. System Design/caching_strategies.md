@@ -69,3 +69,11 @@ Explain how caches cut latency and load, manage consistency, and align with prod
 - Layered cache stack: client cache, CDN, application cache, database cache with arrows showing miss/hit flow.
 - Sequence diagram for cache-aside: request → cache miss → database → cache populate → response.
 - Heat map concept: shard/partition load before and after caching to illustrate hit-rate impact.
+
+### Cache-Aside Flow Outline (for diagram)
+1. Request hits application → checks cache for key.
+2. On miss, fetch data from primary store and validate result.
+3. Write value into cache with TTL plus optional tags/invalidation hooks.
+4. Return response to caller; subsequent requests served from cache until TTL expires or invalidation occurs.
+
+See draft mermaid sequence in `diagrams/cache_read_write_sequence.md` for reference.

@@ -16,6 +16,13 @@ Use this guide to frame architecture discussions quickly, explain trade-offs, an
 - **Resiliency:** Cover health checks, load balancing, failover, backoff/retry policies, circuit breakers, and observability (metrics, traces, logs).
 - **Security & Edge Defense:** Touch on auth/authz, secrets management, encryption, rate limiting, WAF/CDN-based DDoS protection, and API gateway concerns.
 
+### Architecture Map Outline (for upcoming diagram)
+1. Clients (web, mobile, partners) connect through DNS to CDN/WAF/DDoS shield.
+2. Edge forwards sanitized traffic to regional load balancers with health-checked service pools.
+3. API gateway enforces auth/rate-limits and routes to stateless microservices.
+4. Services interact with caches, queues/streams, and data stores (SQL/NoSQL/object storage).
+5. Observability pipeline (metrics, logs, traces) and admin interfaces feed back into operations.
+
 ## Core Components
 
 ### Load Balancer

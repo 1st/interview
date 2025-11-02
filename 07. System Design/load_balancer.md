@@ -59,3 +59,7 @@ Use this guide to explain load balancers quickly, cover common follow-up questio
 - Sequence diagram: client → DNS → load balancer → healthy backend with health-check feedback loop.
 - Architecture sketch: cross-zone load balancers feeding auto-scaled instances, highlighting blue/green weights.
 - Failure timeline: unhealthy node detection, removal, and reintegration after health checks pass.
+
+### Diagram Prep Notes
+1. Health check sequence: annotate intervals (e.g., every 10s), failure threshold, and recovery workflow.
+2. Blue/green architecture: depict traffic splitter with percentage labels and monitoring dashboards tracking error rates.

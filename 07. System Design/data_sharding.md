@@ -80,3 +80,7 @@ Explain how to split and replicate data intelligently to meet growth, latency, a
 - Shard map diagram: client → router → shard nodes with replication pairs.
 - Timeline of resharding: copy, dual writes, validation, cutover.
 - Multi-tenant layout: dedicated shards vs pooled shards highlighting noisy neighbor isolation.
+
+### Diagram Prep Notes
+1. Shard map: list shard IDs, primary/replica roles, and routing metadata service.
+2. Resharding timeline: capture phases (split, dual write, verification, cutover) with duration estimates.

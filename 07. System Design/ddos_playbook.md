@@ -15,10 +15,10 @@ A reusable checklist for preparing, detecting, and responding to distributed den
 - **Classification:** Determine attack type (volumetric, protocol, application-layer) by examining traffic signatures and comparing against historical patterns.
 
 ## Mitigation
-- **Edge Actions:** Activate or tighten WAF/DDoS policies (challenge/deny), enable scrubbing centers, and apply geo/IP blocks or rate limiting.
-- **Gateway Controls:** Increase throttling, enforce stricter authentication challenges, or degrade non-essential endpoints/features.
+- **Edge Actions:** Activate or tighten WAF/DDoS policies (challenge/deny), enable scrubbing centers, and apply geo/IP blocks or rate limiting. Reference vendor playbooks (AWS Shield Advanced, Cloudflare Magic Transit) for canned responses.
+- **Gateway Controls:** Increase throttling, enforce stricter authentication challenges, or degrade non-essential endpoints/features. Disable high-cost endpoints temporarily.
 - **Origin Hardening:** Scale out stateless services, shed low-priority workloads, and ensure backpressure (circuit breakers, queue length thresholds) is active.
-- **Traffic Steering:** Shift load across regions/providers if available; consider isolating or blackholing clearly malicious segments in coordination with ISP.
+- **Traffic Steering:** Shift load across regions/providers if available; coordinate with ISPs for null routing or traffic scrubbing when malicious segments persist.
 
 ## Communication
 - **Internal:** Keep engineering, SRE, security, support, and leadership informed via incident channel and status updates (timeline, actions, risks).

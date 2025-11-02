@@ -16,6 +16,12 @@ Highlight how API gateways centralize cross-cutting concerns, simplify client in
 - **Caching & Compression:** Offload response caching or payload compression for frequently accessed endpoints.
 - **Observability:** Centralized logging, tracing, metrics, correlation IDs, and threat detection (WAF).
 
+### Diagram Prep Notes
+1. Entry: client → CDN/WAF → API gateway edge nodes (highlight mTLS termination).
+2. Policy layer: auth, quota, schema validation blocks shown inline.
+3. Routing fan-out: services/BFFs plus async pathways (queues, events) if used.
+4. Telemetry: arrows to logging/metrics/tracing sinks for observability.
+
 ## Patterns & Trade-Offs
 
 ### API Gateway vs Backend For Frontend (BFF)

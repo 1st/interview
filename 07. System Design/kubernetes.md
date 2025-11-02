@@ -46,3 +46,7 @@ Refresh the essentials for deploying, scaling, and troubleshooting workloads on 
 - Control plane vs worker node architecture diagram.
 - Deployment rollout timeline showing replicas, readiness probes, and service selector updates.
 - Network flow: ingress → service → pod, highlighting CNI path and policies.
+
+### Diagram Prep Notes
+1. Architecture: list control plane components (API server, etcd, controller-manager, scheduler) and worker pieces (kubelet, kube-proxy, CNI plugin).
+2. Rolling update: capture initial replica count, surge/unavailable settings, readiness probes gating traffic.

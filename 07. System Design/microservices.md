@@ -56,3 +56,7 @@ Understand how to decompose, deploy, and operate services that collaborate witho
 - Context map showing bounded contexts and service interactions.
 - Sequence diagram of user request traversing gateway, multiple services, and data stores.
 - Deployment topology: services on Kubernetes/ECS with discovery, mesh, and observability sidecars.
+
+### Diagram Prep Notes
+1. Context map: note bounded contexts (e.g., Orders, Payments, Catalog) and shared components (gateway, discovery, observability stack).
+2. Request journey: map synchronous calls vs async events; label tracing spans to show propagation.
