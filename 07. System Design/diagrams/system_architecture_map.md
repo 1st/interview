@@ -14,8 +14,7 @@ graph LR
     E -->|Cached assets| A
     E --> F[Regional Load Balancer]
     subgraph Services
-        G[API Gateway
-(Auth, Rate Limiting, Logging)]
+        G[API Gateway: Auth, Rate Limiting, Logging]
         H[Service A]
         I[Service B]
         J[Service C]
