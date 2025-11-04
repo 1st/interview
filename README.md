@@ -10,47 +10,47 @@ A focused refresher for software engineers who need to get back to interview sha
 ## Table of Contents
 
 ### 01. General Prep
-- [Overview](01.%20General%20Prep/overview.md)
-- [General interview questions](01.%20General%20Prep/general_questions.md)
-- [Authentication vs Authorization](01.%20General%20Prep/authentication_vs_authorization.md)
-- [Git](01.%20General%20Prep/git.md)
+- [Overview](01. General Prep/overview.md)
+- [General interview questions](01. General Prep/general_questions.md)
+- [Authentication vs Authorization](01. General Prep/authentication_vs_authorization.md)
+- [Git](01. General Prep/git.md)
 
 ### 02. Web Development
-- [Overview](02.%20Web%20Development/overview.md)
-- [Web development](02.%20Web%20Development/web_development.md)
-- [JavaScript](02.%20Web%20Development/javascript.md)
+- [Overview](02. Web Development/overview.md)
+- [Web development](02. Web Development/web_development.md)
+- [JavaScript](02. Web Development/javascript.md)
 
 ### 03. Backend & Frameworks
-- [Overview](03.%20Backend%20%26%20Frameworks/overview.md)
-- [Python](03.%20Backend%20%26%20Frameworks/python.md)
-- [Django](03.%20Backend%20%26%20Frameworks/django.md)
-- [Java](03.%20Backend%20%26%20Frameworks/java.md)
+- [Overview](03. Backend %26 Frameworks/overview.md)
+- [Python](03. Backend %26 Frameworks/python.md)
+- [Django](03. Backend %26 Frameworks/django.md)
+- [Java](03. Backend %26 Frameworks/java.md)
 
 ### 04. Data & Storage
-- [Overview](04.%20Data%20%26%20Storage/overview.md)
-- [Databases](04.%20Data%20%26%20Storage/databases.md)
+- [Overview](04. Data %26 Storage/overview.md)
+- [Databases](04. Data %26 Storage/databases.md)
 
 ### 05. Interview Strategy
-- [Overview](05.%20Interview%20Strategy/overview.md)
-- [Algorithmic questions](05.%20Interview%20Strategy/algorithms.md) — high-level framing; defer detailed practice to the dedicated Algorithms & Data Structures repo.
+- [Overview](05. Interview Strategy/overview.md)
+- [Algorithmic questions](05. Interview Strategy/algorithms.md) — high-level framing; defer detailed practice to the dedicated Algorithms & Data Structures repo.
 
 ### 06. Behavioral Interviews
-- [Overview](06.%20Behavioral%20Interviews/overview.md)
-- [Behavioral Interview Playbook](06.%20Behavioral%20Interviews/behavioral_playbook.md)
-- [Behavioral Interview Question Bank](06.%20Behavioral%20Interviews/behavioral_questions.md)
+- [Overview](06. Behavioral Interviews/overview.md)
+- [Behavioral Interview Playbook](06. Behavioral Interviews/behavioral_playbook.md)
+- [Behavioral Interview Question Bank](06. Behavioral Interviews/behavioral_questions.md)
 
 ### 07. System Design
 Start with the refresher for the end-to-end flow (edge DDoS shield → load balancer → services → data), then dive into specific components below.
-- [Overview](07.%20System%20Design/overview.md)
-- [System Design Refresher](07.%20System%20Design/system_design_refresher.md)
-- [Load Balancer Deep Dive](07.%20System%20Design/load_balancer.md)
-- [API Gateway Deep Dive](07.%20System%20Design/api_gateway.md)
-- [Caching Strategies](07.%20System%20Design/caching_strategies.md)
-- [Data Sharding & Storage Tiering](07.%20System%20Design/data_sharding.md)
-- [System Design Glossary](07.%20System%20Design/system_design_glossary.md)
-- [DDoS Response Playbook](07.%20System%20Design/ddos_playbook.md)
-- [Microservices Architecture](07.%20System%20Design/microservices.md)
-- [Kubernetes Operations](07.%20System%20Design/kubernetes.md)
+- [Overview](07. System Design/overview.md)
+- [System Design Refresher](07. System Design/system_design_refresher.md)
+- [Load Balancer Deep Dive](07. System Design/load_balancer.md)
+- [API Gateway Deep Dive](07. System Design/api_gateway.md)
+- [Caching Strategies](07. System Design/caching_strategies.md)
+- [Data Sharding & Storage Tiering](07. System Design/data_sharding.md)
+- [System Design Glossary](07. System Design/system_design_glossary.md)
+- [DDoS Response Playbook](07. System Design/ddos_playbook.md)
+- [Microservices Architecture](07. System Design/microservices.md)
+- [Kubernetes Operations](07. System Design/kubernetes.md)
 
 ## How to Use This Repository
 - Start with **Quick Ramp-Up** when you only have a few minutes.

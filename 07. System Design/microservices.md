@@ -52,6 +52,8 @@ Understand how to decompose, deploy, and operate services that collaborate witho
 - Event sourcing, CQRS, and saga patterns for distributed transactions.
 - Team topology patterns (Conway’s Law) and platform engineering approaches.
 
+Need a refresher on edge defenses and request flow? Pair this guide with the [System Design Refresher](system_design_refresher.md).
+
 ## Diagram Ideas
 - Context map showing bounded contexts and service interactions.
 - Sequence diagram of user request traversing gateway, multiple services, and data stores.

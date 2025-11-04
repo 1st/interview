@@ -44,6 +44,8 @@ Use this guide to frame architecture discussions quickly, explain trade-offs, an
 
 Reference the shared [DDoS Response Playbook](ddos_playbook.md) for a full preparation, detection, mitigation, and recovery workflow.
 
+For service decomposition and deployment platform specifics, pair this refresher with the [Microservices Architecture guide](microservices.md) and the [Kubernetes Operations guide](kubernetes.md).
+
 ### API Gateway
 - Central entry point for client requests; handles routing, authentication, rate limiting, and request transformation.
 - Enables versioning, monetization, and observability across microservices.
