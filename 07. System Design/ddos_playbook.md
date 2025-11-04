@@ -30,15 +30,16 @@ A reusable checklist for preparing, detecting, and responding to distributed den
 - **Follow-Up:** File action items (automation, tooling improvements, provider contracts, playbook refinements) and schedule a blameless postmortem review.
 
 ## References & Tooling
-- **Providers:** AWS Shield/CloudFront, Azure Front Door, Google Cloud Armor, Cloudflare, Akamai Kona.
+- **Providers:** AWS Shield/CloudFront (Shield Advanced), Azure Front Door with DDoS Protection, Google Cloud Armor, Cloudflare, Akamai Kona.
 - **Detection:** Prometheus/Grafana dashboards, ELK/Loki logging, packet captures, provider analytics.
 - **Testing:** DDoS simulation platforms, load-testing tools (k6, Locust), chaos engineering frameworks.
 
 ## Provider Quick Notes
 - **AWS Shield Advanced:** Automatic detection with Route53/CloudFront integration; use AWS Firewall Manager for centralized rules.
-- **Cloudflare:** Turn on "Under Attack" mode, set zone-level rate limits, leverage Magic Transit for network-layer attacks.
-- **Google Cloud Armor:** Apply security policies with preconfigured WAF rules, enable adaptive protection for ML-based anomaly detection.
-- **Akamai:** Coordinate with SOC for scrubbing, deploy Kona site defender rules tuned to application patterns.
+- **Cloudflare:** Enable "Under Attack" mode, set zone-level rate limits, leverage Magic Transit for network-layer attacks.
+- **Google Cloud Armor:** Apply security policies with preconfigured WAF rules, enable adaptive protection for anomaly detection.
+- **Azure Front Door:** Configure WAF managed rules, rate limits, and Azure DDoS Protection Standard for volumetric attacks.
+- **Akamai Kona:** Coordinate with Akamai SOC for scrubbing; deploy tuned Kona Site Defender policies aligned with application patterns.
 
 ## Diagram Ideas
 - Timeline of detection → mitigation actions → recovery.
