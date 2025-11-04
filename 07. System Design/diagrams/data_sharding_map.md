@@ -7,7 +7,7 @@ graph TD
     Router -->|Tenant B| ShardBPrimary[Shard B Primary]
     Router -->|Tenant C| ShardCPrimary[Shard C Primary]
 
-    ShardAPrimary --> ShardAReplica[Shard A Replica]
+    ShardAPrimary --> ShardAReplica[Shard A Replica] --- Note["Replication async (latency < 200ms)."]
     ShardBPrimary --> ShardBReplica[Shard B Replica]
     ShardCPrimary --> ShardCReplica[Shard C Replica]
 
@@ -28,4 +28,4 @@ graph TD
 **Notes**
 - Router consults shard map to send tenants to the correct primary.
 - Each shard has primaries and replicas for HA; monitoring feeds are shown for observability.
-- Rebalancing adds new shard and migrates tenant/data gradually.
+- Rebalancing adds new shard and migrates tenant/data gradually; mention latency impact of async replication.

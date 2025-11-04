@@ -2,10 +2,9 @@
 
 ```mermaid
 graph TB
-    Clients[kubectl / CI Pipelines]
-    Clients -->|REST| APIServer[API Server]
+    Clients[kubectl / CI Pipelines] -->|REST| APIServer[API Server]
 
-    subgraph Control Plane
+    subgraph ControlPlane[Control Plane]
         APIServer
         Controller[Controller Manager]
         Scheduler
@@ -16,7 +15,7 @@ graph TB
     APIServer --> Scheduler
     APIServer --> Etcd
 
-    subgraph Worker Node
+    subgraph WorkerNodes[Worker Nodes (representative)]
         Kubelet[Kubelet]
         KubeProxy[Kube-proxy]
         PodA[Pod A]
@@ -33,9 +32,9 @@ graph TB
     Kubelet --> PodB
     Kubelet --> PodC
 
-    subgraph Networking
+    subgraph Networking[Networking]
         Ingress[Ingress Controller]
-        Service[Service - ClusterIP/LoadBalancer]
+        Service[Service (ClusterIP/LoadBalancer)]
         CNI[CNI Plugin]
     end
 
@@ -43,12 +42,12 @@ graph TB
     Service --> PodA
     Service --> PodB
     Service --> PodC
-    CNI --> PodA
-    CNI --> PodB
-    CNI --> PodC
+    CNI <-->|Pod networking| PodA
+    CNI <-->|Pod networking| PodB
+    CNI <-->|Pod networking| PodC
 ```
 
 **Notes**
-- Control plane components manage desired state; workers (one shown, replicated as needed) run kubelet/kube-proxy and host pods.
-- Ingress and Services expose workloads; CNI provides pod networking.
+- Control plane components manage desired state; worker nodes (others implied) run kubelet/kube-proxy and host pods.
+- Ingress/Service expose workloads; CNI handles pod networking.
 - External clients interact via `kubectl`/CI hitting the API server.

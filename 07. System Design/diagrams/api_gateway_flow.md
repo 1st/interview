@@ -2,24 +2,26 @@
 
 ```mermaid
 graph TD
+    classDef node fill:#e8f5e9,stroke:#2e7d32,color:#1b5e20;
+
     Client[Client] --> Edge[CDN / WAF]
     Edge --> Gateway[API Gateway]
-    Gateway -->|Auth / JWT validation| AuthService[Auth Provider]
-    Gateway -->|Rate limit check| QuotaService[Quota Store]
+    Gateway -->|Auth validation| AuthProvider[Auth Provider]
+    Gateway -->|Rate limit| QuotaStore[Quota Store]
     Gateway --> Router{Routing Rules}
-    Router --> ServiceA[Service A - REST]
-    Router --> ServiceB[Service B - gRPC]
+    Router --> ServiceA[Service A]
+    Router --> ServiceB[Service B]
     Router --> BFF[Mobile BFF Service]
     BFF --> ServiceC[Service C]
-    ServiceA --> DB1[(Database / Cache)]
-    ServiceB --> DB2[(Message Queue / Stream)]
-    ServiceC --> DB3[(Database)]
+    ServiceA --> CacheDB[(Cache / Database)]
+    ServiceB --> QueueStore[(Queue / Database)]
+    ServiceC --> ServiceDB[(Database)]
     Gateway --> Observability[Metrics / Logs / Traces]
-    Observability --> Ops[Ops Dashboards]
+    Observability --> OpsDash[Ops Dashboards]
 ```
 
 **Notes**
-- Edge layer (CDN/WAF) handles DDoS and basic threat detection before the gateway.
-- Gateway enforces auth and rate limits, then routes based on path/version/client.
-- Mobile BFF (Backend for Frontend) tailors responses for mobile clients before calling downstream services.
-- Observability hooks capture metrics/logs/traces for downstream analysis.
+- Edge layer shields against DDoS/threats before the gateway.
+- Gateway handles authentication, rate limiting, and routing.
+- Mobile BFF tailors responses for mobile clients.
+- Observability pipeline catches metrics/logs/traces for dashboards.

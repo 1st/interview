@@ -18,16 +18,16 @@ sequenceDiagram
         K-->>S: Miss
         S->>D: Query product 123
         D-->>S: Product record
-        S->>K: Populate cache with TTL (write)
-        note right of K: TTL = 5 min<br/>Tags = product:123
+        S->>K: Populate cache (TTL=300s, idempotent write)
+        note right of K: TTL 5 min, tag=product:123
         S-->>C: Response (fresh)
     end
     opt Invalidations
-        S->>K: Delete/Update cache on product change
+        S->>K: Delete on update (event-driven)
     end
 ```
 
 **Key Points**
 - Cache miss triggers database read and cache populate with TTL.
 - Optional invalidation step ensures updates propagate (e.g., on write path/event).
-- Mention TTL and tagging strategy during interviews; highlight idempotent writes.
+- Mention TTL and idempotent writes during interviews.

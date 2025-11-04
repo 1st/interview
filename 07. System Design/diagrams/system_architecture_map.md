@@ -1,7 +1,11 @@
-# System Design Architecture Map (Draft)
+# System Design Architecture Map
 
 ```mermaid
-graph TD
+graph TB
+    classDef sync fill:#e3f2fd,stroke:#1565c0,color:#0d47a1;
+    classDef async fill:#fff3e0,stroke:#ef6c00,color:#bf360c;
+    classDef data fill:#f1f8e9,stroke:#33691e,color:#1b5e20;
+
     subgraph Clients
         A[Web Client]
         B[Mobile Client]
@@ -9,33 +13,34 @@ graph TD
     end
     subgraph Edge
         D[DNS]
-        E[CDN / WAF / DDoS Shield]
+        E[CDN / WAF]
     end
     subgraph Ingress
-        F[Regional Load Balancer]
-        G[API Gateway: Auth, Rate Limiting, Logging]
+        F[Load Balancer]
+        G[API Gateway]
     end
     subgraph Services
         H[Service A]
         I[Service B]
         J[Service C]
     end
-    subgraph Data & Messaging
-        K[(Cache Layer)]
-        L[(Message Queue / Stream)]
-        M[(Databases / Object Storage)]
+    subgraph Data
+        K[(Cache)]
+        L[(Database)]
+        M[(Queue)]
     end
     subgraph Observability
         N[Metrics]
         O[Logs]
         P[Traces]
     end
+    Q[Ops Dashboards]
 
-    A -->|HTTPS| D
-    B -->|HTTPS| D
-    C -->|HTTPS| D
+    A --> D
+    B --> D
+    C --> D
     D --> E
-    E -->|Sanitized traffic| F
+    E --> F
     F --> G
     G --> H
     G --> I
@@ -43,11 +48,10 @@ graph TD
 
     H --> K
     I --> K
-    J --> L
-    K --> M
-    I --> M
+    H --> L
+    I --> L
     J --> M
-    L --> I
+    M --> I
 
     H --> N
     H --> O
@@ -59,12 +63,17 @@ graph TD
     J --> O
     J --> P
 
-    N --> Q[Ops Dashboards]
+    N --> Q
     O --> Q
     P --> Q
+
+    class H,I sync;
+    class J async;
+    class K,L,M data;
 ```
 
-**Notes**
-- Edge layer (CDN/WAF) absorbs DDoS traffic and serves static assets; sanitized traffic flows to load balancers.
-- API gateway enforces authentication and rate limiting before routing to services.
-- Services interact with cache, message queues, and data stores while emitting observability data.
+**Legend**
+- Sync Service: Service A / Service B
+- Async Service: Service C (Queue)
+- Data Stores: Cache, Database, Queue
+- Observability: Metrics, Logs, Traces feeding Ops dashboards

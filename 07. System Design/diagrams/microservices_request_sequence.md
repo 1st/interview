@@ -24,6 +24,7 @@ sequenceDiagram
     EventBus->>Metrics: Emit event metrics
     ServiceA-->>BFF: Order response
     BFF-->>Client: Success (order id)
+    Note over ServiceA,EventBus: Compensation path on failure (refund/release stock)
 ```
 
 **Notes**

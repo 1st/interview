@@ -2,21 +2,22 @@
 
 ```mermaid
 gantt
+    title Deployment Rolling Update
     dateFormat  X
     axisFormat  %s
-    title Deployment Rolling Update (replicas=4, maxSurge=1, maxUnavailable=1)
 
-    section Steps
-    Drain old pod #1          :done,    0, 1
-    Launch surge pod #5       :active,  1, 1
-    Wait for readiness #5     :         2, 1
-    Route traffic to #5       :         3, 1
-    Terminate old pod #2      :         4, 1
-    Launch surge pod #6       :         5, 1
-    Readiness check #6        :         6, 1
-    Continue until pods rotated :       7, 3
+    section Phase 1
+    Launch surge pod (replicas=5)   :active, 0, 1
+    Readiness check                 :         1, 1
+
+    section Phase 2
+    Route traffic to new pod (stable=4) : 2, 1
+    Terminate old pod                  : 3, 1
+
+    section Phase 3
+    Repeat for remaining pods         : 4, 4
 ```
 
 **Notes**
-- With `maxSurge=1` and `maxUnavailable=1`, deployment keeps 4–5 pods during rollout.
-- Readiness probes must pass before shifting traffic; if they fail, rollout pauses/rolls back.
+- `maxSurge=1` and `maxUnavailable=1` keep total replicas between 4 and 5 during rollout.
+- Readiness probes gate traffic; a failed probe pauses or rolls back.
