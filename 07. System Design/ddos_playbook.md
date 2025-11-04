@@ -34,6 +34,12 @@ A reusable checklist for preparing, detecting, and responding to distributed den
 - **Detection:** Prometheus/Grafana dashboards, ELK/Loki logging, packet captures, provider analytics.
 - **Testing:** DDoS simulation platforms, load-testing tools (k6, Locust), chaos engineering frameworks.
 
+## Provider Quick Notes
+- **AWS Shield Advanced:** Automatic detection with Route53/CloudFront integration; use AWS Firewall Manager for centralized rules.
+- **Cloudflare:** Turn on "Under Attack" mode, set zone-level rate limits, leverage Magic Transit for network-layer attacks.
+- **Google Cloud Armor:** Apply security policies with preconfigured WAF rules, enable adaptive protection for ML-based anomaly detection.
+- **Akamai:** Coordinate with SOC for scrubbing, deploy Kona site defender rules tuned to application patterns.
+
 ## Diagram Ideas
 - Timeline of detection → mitigation actions → recovery.
 - Layered architecture showing traffic flow through CDN/WAF, load balancer, services, and data stores.
