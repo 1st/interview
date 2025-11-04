@@ -2,6 +2,12 @@
 
 Use this chapter as a conversation prep guide for the algorithm portion of interviews. Keep actual coding drills, deep explanations, and implementations in the dedicated [Algorithms & Data Structures repository](https://github.com/1st/algorithms/).
 
+## Quick Practice Loop
+- Pick one medium-level problem, spend 5 minutes clarifying constraints before touching the keyboard.
+- Pseudocode aloud, then solve in your preferred language; timebox to 20 minutes.
+- Debrief: compare with editorial/solutions, capture new patterns in spaced notes.
+- Log the session in the external repo (or a journal) so you can revisit trends and progress.
+
 ## Cheat Sheet
 - Start answers with complexity targets (`O(n log n)` etc.) and mention trade-offs quickly.
 - Narrate problem-solving steps: clarify, plan, code, test, optimize.
@@ -46,6 +52,7 @@ Use this chapter as a conversation prep guide for the algorithm portion of inter
 - **Learning loop:** Tie the outcome back to prior practice — reference similar problems from the [Algorithms & Data Structures repository](https://github.com/1st/algorithms/).
 
 ## Deep Dive Later
+- Pair each practice session with at least one write-up in your personal notes or the external repo; explain the pattern as if teaching it.
 - Schedule focused coding sessions in the Algorithms & Data Structures repo to reinforce techniques.
 - Capture post-practice reflections there; keep this guide as your high-level conversation map.
 - Study company-specific question patterns and align them to the themes above for targeted prep.
