@@ -35,11 +35,11 @@ A reusable checklist for preparing, detecting, and responding to distributed den
 - **Testing:** DDoS simulation platforms, load-testing tools (k6, Locust), chaos engineering frameworks.
 
 ## Provider Quick Notes
-- **AWS Shield Advanced:** Automatic detection with Route53/CloudFront integration; use AWS Firewall Manager for centralized rules.
-- **Cloudflare:** Enable "Under Attack" mode, set zone-level rate limits, leverage Magic Transit for network-layer attacks.
-- **Google Cloud Armor:** Apply security policies with preconfigured WAF rules, enable adaptive protection for anomaly detection.
-- **Azure Front Door:** Configure WAF managed rules, rate limits, and Azure DDoS Protection Standard for volumetric attacks.
-- **Akamai Kona:** Coordinate with Akamai SOC for scrubbing; deploy tuned Kona Site Defender policies aligned with application patterns.
+- **AWS Shield Advanced:** Pre-authorize AWS SRT access, confirm WebACL coverage through AWS WAF, and enable Shield Advanced automatic application layer mitigation on CloudFront. Use AWS Firewall Manager to push emergency rate limits and log Shield metrics to CloudWatch for incident timelines.
+- **Cloudflare:** Toggle "Under Attack" mode, apply bot-fight and zone-level rate limits, and escalate to Cloudflare support with a shield ticket if the attack exceeds self-service policies. Keep Magic Transit or Spectrum tunnels warmed for network-layer absorption and verify Argo Smart Routing remains enabled for legit clients.
+- **Google Cloud Armor:** Use preconfigured WAF rules plus adaptive protection for behavioral anomalies, pin emergency rate-based rules to load balancer backends, and coordinate with the Google Cloud DDoS response team for scrubbing when volumetric traffic persists.
+- **Azure Front Door:** Switch to DDoS Protection Standard, tighten WAF managed rules with anomaly scoring, and engage Azure Rapid Response (via Microsoft support plan) for coordinated mitigation. Mirror changes on Application Gateway if hybrid routing is in play.
+- **Akamai Kona:** Trigger emergency Kona Site Defender policies, leverage adaptive rate controls, and loop in the Akamai SOC for hands-on tuning. Validate origin shield and fail-open/closed preferences match the current incident strategy.
 
 ## Diagram Ideas
 - Timeline of detection → mitigation actions → recovery.

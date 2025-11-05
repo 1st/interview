@@ -2,9 +2,13 @@
 
 ```mermaid
 graph TB
-    classDef sync fill:#e3f2fd,stroke:#1565c0,color:#0d47a1;
-    classDef async fill:#fff3e0,stroke:#ef6c00,color:#bf360c;
+    classDef client fill:#e3f2fd,stroke:#1565c0,color:#0d47a1;
+    classDef edge fill:#bbdefb,stroke:#1565c0,color:#0d47a1;
+    classDef ingress fill:#ede7f6,stroke:#512da8,color:#311b92;
+    classDef sync fill:#fff3e0,stroke:#ef6c00,color:#bf360c;
+    classDef async fill:#ffe0b2,stroke:#ef6c00,color:#bf360c;
     classDef data fill:#f1f8e9,stroke:#33691e,color:#1b5e20;
+    classDef observability fill:#fbe9e7,stroke:#d84315,color:#bf360c;
 
     subgraph Clients
         A[Web Client]
@@ -70,6 +74,10 @@ graph TB
     class H,I sync;
     class J async;
     class K,L,M data;
+    class A,B,C client;
+    class D,E edge;
+    class F,G ingress;
+    class N,O,P,Q observability;
 ```
 
 **Legend**

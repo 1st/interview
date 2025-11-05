@@ -2,9 +2,15 @@
 
 ```mermaid
 graph TB
+    classDef client fill:#e3f2fd,stroke:#1565c0,color:#0d47a1;
+    classDef control fill:#ede7f6,stroke:#512da8,color:#311b92;
+    classDef worker fill:#fff3e0,stroke:#ef6c00,color:#bf360c;
+    classDef network fill:#f1f8e9,stroke:#33691e,color:#1b5e20;
+
     Clients[kubectl / CI Pipelines] -->|REST| APIServer[API Server]
 
     subgraph ControlPlane[Control Plane]
+        direction TB
         APIServer
         Controller[Controller Manager]
         Scheduler
@@ -16,6 +22,7 @@ graph TB
     APIServer --> Etcd
 
     subgraph WorkerNodes[Worker Nodes (representative)]
+        direction TB
         Kubelet[Kubelet]
         KubeProxy[Kube-proxy]
         PodA[Pod A]
@@ -33,6 +40,7 @@ graph TB
     Kubelet --> PodC
 
     subgraph Networking[Networking]
+        direction TB
         Ingress[Ingress Controller]
         Service[Service (ClusterIP/LoadBalancer)]
         CNI[CNI Plugin]
@@ -45,6 +53,11 @@ graph TB
     CNI <-->|Pod networking| PodA
     CNI <-->|Pod networking| PodB
     CNI <-->|Pod networking| PodC
+
+    class Clients client;
+    class APIServer,Controller,Scheduler,Etcd control;
+    class Kubelet,KubeProxy,PodA,PodB,PodC worker;
+    class Ingress,Service,CNI network;
 ```
 
 **Notes**
