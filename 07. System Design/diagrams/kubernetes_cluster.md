@@ -21,7 +21,7 @@ graph TB
     APIServer --> Scheduler
     APIServer --> Etcd
 
-    subgraph WorkerNodes[Worker Nodes (representative)]
+    subgraph WorkerNodes[Worker Nodes - representative]
         direction TB
         Kubelet[Kubelet]
         KubeProxy[Kube-proxy]
@@ -42,7 +42,7 @@ graph TB
     subgraph Networking[Networking]
         direction TB
         Ingress[Ingress Controller]
-        Service[Service (ClusterIP/LoadBalancer)]
+        Service[Service - ClusterIP/LoadBalancer]
         CNI[CNI Plugin]
     end
 
